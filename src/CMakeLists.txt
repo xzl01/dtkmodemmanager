@@ -38,7 +38,7 @@ PUBLIC
     Qt${QT_VERSION_MAJOR}::DBus
     Dtk::Core
 PRIVATE
-    PkgConfig::RSVG2
+
 )
 
 set_target_properties(${LIB_NAME} PROPERTIES

@@ -2,14 +2,14 @@
 //
 // SPDX-License-Identifier: LGPL-3.0-or-later
 
-#ifndef DDEMOTYPES_H
-#define DDEMOTYPES_H
+#ifndef DMODEMTYPES_H
+#define DMODEMTYPES_H
 
-#include "dtkdemo_global.h"
+#include "dtkmodem_global.h"
 #include <QDBusArgument>
 #include <QList>
 
-DDEMO_BEGIN_NAMESPACE
+DMODEM_BEGIN_NAMESPACE
 
 struct UserPath_p;
 
@@ -22,6 +22,6 @@ struct UserPath
 
 using UserPathList = QList<UserPath>;
 
-DDEMO_END_NAMESPACE
+DMODEM_END_NAMESPACE
 
 #endif

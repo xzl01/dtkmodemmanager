@@ -1,4 +1,4 @@
-Source: dtk-template
+Source: dtkmodem
 Section: libdevel
 Priority: optional
 Maintainer: Packages Builder <packages@deepin.com>
@@ -11,29 +11,30 @@ Build-Depends:
  qtbase5-dev,
  graphviz,
  doxygen <!nodoc>
+ modem (>= 1.14)
 Standards-Version: 4.5.0
 
-Package: libdtk-template
+Package: libdtkmodem
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: Deepin Tool Kit template library
- libdtk-template is base library of Deepin Qt/C++ applications.
+ DTK WWAN modem manager library
  .
  This package contains the shared libraries.
 
-Package: libdtk-template-dev
+Package: libdtkmodem-dev
 Architecture: any
 Depends:${misc:Depends}, libdtk-template( =${binary:Version})
 Description: Deepin Tool Kit template devel library
- libdtk-template-dev is base devel library of Deepin Qt/C++ applications.
+ DTK WWAN modem manager library.
  .
  This package contains the header files and static libraries.
 
-Package: libdtk-template-doc
+Package: libdtkmodem-doc
 Architecture: any
 Build-Profiles: <!nodoc>
 Depends:${misc:Depends}, libdtk-template-dev( =${binary:Version})
 Description: Deepin Tool Kit template devel library
- libdtk-template-doc is base devel document of Deepin Qt/C++ applications.
+ DTK WWAN modem manager documentation.
  .
  This package contains the devel documents.

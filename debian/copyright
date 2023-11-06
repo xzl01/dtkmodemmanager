@@ -1,9 +1,9 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
-Upstream-Name: dtk-template
-Source: https://github.com/linux/deepin/dtk-template
+Upstream-Name: dtkmodem
+Source: https://github.com/linux/deepin/dtkmodem
 
 Files: *
-Copyright: 2022 - 2023 Deepin Technology Co., Ltd.
+Copyright: 2022 - 2023 deepin Technology Co., Ltd.
 License: LGPL-3+
  This package is free software; you can redistribute it and/or modify
  it under the terms of the GNU Lesser General Public License as published by

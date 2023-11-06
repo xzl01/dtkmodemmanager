@@ -1,0 +1,18 @@
+// SPDX-FileCopyrightText: 2023 UnionTech Software Technology Co., Ltd.
+//
+// SPDX-License-Identifier: LGPL-3.0-or-later
+
+#ifndef DTKMODEM_GLOBAL_H
+#define DTKMODEM_GLOBAL_H
+
+#define DTK_NAMESPACE Dtk
+#define DMODEM_NAMESPACE MODEMMANAGER
+#define DTK_MODEMMANAGER_NAMESPACE DTK_NAMESPACE::DMODEM_NAMESPACE
+
+#define DMODEM_USE_NAMESPACE using namespace DTK_MODEMMANAGER_NAMESPACE;
+
+#define DMODEM_BEGIN_NAMESPACE namespace DTK_NAMESPACE { namespace DMODEM_NAMESPACE {
+
+#define DMODEM_END_NAMESPACE }}
+
+#endif

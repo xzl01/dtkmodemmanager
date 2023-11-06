@@ -1,0 +1,35 @@
+// SPDX-FileCopyrightText: 2022 - 2023 UnionTech Software Technology Co., Ltd.
+//
+// SPDX-License-Identifier: LGPL-3.0-or-later
+
+/*!
+@~chinese
+@file dmodemmanager.h
+
+ModemManager 是一个用于管理无线和以太网调制解调器的 D-Bus 服务。它支持各种调制解调器，包括 USB、PCIe、串行和 PCMCIA。
+
+@class Dtk::Modem::ModemManager dmodemmanager.h
+@brief ModemManager 类,是对 ModemManager 的Dbus接口封装，向上提供易于Qt调用的接口
+
+
+@fn bool ModemManager::inhibitDevices(const QString uid, bool inhibit);
+@brief 禁止或取消禁止设备
+    当调制解调器被禁止时，ModemManager 将关闭其所有端口并将其从总线中取消导出，以便接口的用户无法再使用它
+@param[in] uid 设备的唯一标识符
+@param[in] inhibit true 禁止设备，false 取消禁止设备
+@return true 成功，false 失败
+
+@fn void ModemManager::reportKernelEvent(const QString &event, const QString &message);
+@brief 向 ModemManager 发送内核事件
+@note 仅当 udev 未用于报告内核事件时，此方法才可用
+@param[in] event 事件的名称
+@param[in] message 事件的详细信息
+
+@fn void ModemManager::scanDevices();
+@brief 扫描设备
+
+@fn void ModemManager::setLogging(const QString &level);
+@brief 设置日志级别
+@param[in] level 日志级别："MSG" （自 1.22 起）、 "INFO" 、 "DEBUG"
+
+*/
